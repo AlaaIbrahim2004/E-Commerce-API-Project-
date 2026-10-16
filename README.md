@@ -19,7 +19,8 @@ To ensure high maintainability, testability, and a strict separation of concerns
 * **Infrastructure Layer:** Handles data access operations using **Entity Framework Core**, implementing the Repository Pattern and Unit of Work.
 * **Service/Shared Layer:** Encapsulates business logic and utilizes **DTOs (Data Transfer Objects)** to securely map and format API responses.
 * **Web (API) Layer:** The presentation layer containing controllers, routing, and dependency injection configurations.
-
+- **Test Layer:** An isolated xUnit test project dedicated to validating core business logic and services independently.
+  
 ## ✨ Key Features & Technical Highlights
 
 * **🗄️ Database Segmentation (Separation of Concerns):** Enhanced security and data management by structuring the application to use **two separate databases**:
@@ -28,6 +29,15 @@ To ensure high maintainability, testability, and a strict separation of concerns
 * **🔒 Secure Authentication & Authorization:** Developed robust RESTful endpoints for user registration, login, and role management utilizing **ASP.NET Core Identity** secured with **JWT (JSON Web Tokens)**.
 * **⚡ High-Speed Shopping Basket (Redis):** Integrated **Redis** as an in-memory distributed cache to manage the user's shopping cart, providing extremely fast read/write operations and high availability.
 * **📦 Advanced Product Catalog Operations:** Implemented comprehensive product endpoints supporting advanced filtering, sorting, and pagination mechanisms.
+
+## 🧪 Unit Testing & Quality Assurance
+The core business logic is rigorously tested to ensure software reliability, error resilience, and ease of future refactoring:
+- **Testing Frameworks:** Built using **xUnit** and **Moq** for isolating unit tests from external dependencies (Database, Redis, Mapper).
+- **Advanced Mocking Techniques:** Employed **MockQueryable** to mock async `IQueryable` calls on ASP.NET Core Identity's `UserManager`.
+- **Verified Code Coverage:** 
+  - Achieved **71% Branch Coverage** across application services.
+  - Reached **100% Coverage** on `AuthenticationService` and **82%+ Coverage** on `BasketService`.
+- **Coverage Reporting:** Generated comprehensive HTML coverage metrics using **Cobertura XML** and **ReportGenerator**.
 
 ## 🚀 Deployment & Cloud Architecture
 The application is fully deployed and accessible online utilizing modern cloud services:
