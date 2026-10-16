@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation", "Infrastruct
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{97D7BCDC-3E6F-4679-AF63-D5CD7FEB3F86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E_Commerce Unit Testing", "E_Commerce Unit Testing\E_Commerce Unit Testing.csproj", "{46A86AB3-9EA1-40A6-A7B2-DC9599B9974F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{97D7BCDC-3E6F-4679-AF63-D5CD7FEB3F86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97D7BCDC-3E6F-4679-AF63-D5CD7FEB3F86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97D7BCDC-3E6F-4679-AF63-D5CD7FEB3F86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46A86AB3-9EA1-40A6-A7B2-DC9599B9974F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46A86AB3-9EA1-40A6-A7B2-DC9599B9974F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46A86AB3-9EA1-40A6-A7B2-DC9599B9974F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46A86AB3-9EA1-40A6-A7B2-DC9599B9974F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
